@@ -1,0 +1,11 @@
+name: Move new issues into Backlog
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  forward-merge-pull-requests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{github.ref}}
