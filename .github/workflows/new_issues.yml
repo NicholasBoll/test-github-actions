@@ -3,6 +3,8 @@ name: Move new issues into Backlog
 on:
   issues:
     types: [opened]
+  pull_request_target:
+    types: [opened]
 
 jobs:
   automate-project-columns:
