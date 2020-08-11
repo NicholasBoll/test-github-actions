@@ -1,8 +1,8 @@
-name: 'merge-forward'
+name: "merge-forward"
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   test: # make sure the action works on a clean machine without building
@@ -11,4 +11,4 @@ jobs:
       - uses: NicholasBoll/action-forward-merge-pr@0.0.1
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          branches: main+prerelease/v5
+          branches: master+prerelease/v5
